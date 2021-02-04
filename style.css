@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: Karla;
+  font-size: 16px;
+  color: white;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 15px;
+}
+
+.parentFlex {
+  width: 50%;
+  min-width: 470px;
+  height: 67%;
+  min-height: 435px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 3px #C8C8C8;
+
+}
+
+.card {
+  padding: 20px 30px 30px 30px;
+}
+
+.one {
+  width:100%;
+  min-width: 470px;
+  height: 45%;
+  min-height: 201px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.two , .three {
+  width:50%;
+  min-width: 235px;
+  height: 55%;
+  min-height: 234px;
+}
+
+.two {
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+}
+
+.three {
+  background-color: hsl(179, 62%, 43%);
+  opacity: 85%;
+  border-radius: 0 0 10px 0;
+}
+
+.button {
+  height: 45px;
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 10px;
+  box-shadow: 0 8px 6px -6px grey;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button > p {margin: 0;}
+
+.one > :first-child {
+  color: hsl(179, 62%, 43%);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.one > :nth-child(2) {
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.one > :last-child {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6;
+}
+
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.two > :first-child , .three > :first-child {
+  font-weight: 700;
+}
+
+.inline > :last-child , .three > :last-child {
+
+  font-size: 13px;
+  font-weight: lighter;
+  line-height: 1.6;
+  opacity: 75%;
+}
+
+@media only screen and (max-width: 375px) {
+
+  main {
+    height: auto;
+    width: auto;
+    margin: 75px 0 75px 0;
+  }
+
+  .parentFlex {
+    width: 81%;
+    min-width: 300px;
+    height: 800px;
+    min-height: 800px;
+    flex-direction: column;
+  }
+
+  .one, .two, .three {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .one {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .two, .three {
+    height: 250px;
+    min-height: 250px;
+  }
+
+  .two {border-radius: 0;}
+  .three {border-radius: 0 0 10px 10px;}
+
+}
